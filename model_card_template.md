@@ -26,9 +26,9 @@ The metrics used to evaluate model performance were precision, recall, and F1 sc
 
 Model performance values
 
-Precision: 0.7419
-Recall: 0.6384
-F1 score: 0.6863
+* Precision: 0.7419
+* Recall: 0.6384
+* F1 score: 0.6863
 
 Additionally, model performance was evaluated on categorical feature slices and those metrics were saved to the file slice_output.txt. Metrics are included for features such as workclass, native-country, education, marital-status, sex, race, relationship, and occupation. 
 
