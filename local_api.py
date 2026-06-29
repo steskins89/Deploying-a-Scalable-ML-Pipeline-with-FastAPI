@@ -10,8 +10,6 @@ print(f"Status code: {r.status_code}")
 # TODO: print the welcome message
 print(f"Result: {r.json()['message']}")
 
-
-
 data = {
     "age": 37,
     "workclass": "Private",

@@ -5,7 +5,10 @@ from sklearn.ensemble import RandomForestClassifier
 # TODO: add necessary import
 
 # Optional: implement hyperparameter tuning.
+
+
 def train_model(X_train, y_train):
+
     """
     Trains a machine learning model and returns it.
 

@@ -1,9 +1,9 @@
-import pytest
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from ml.model import compute_model_metrics, train_model
 from ml.data import apply_label
 # TODO: add necessary import
+
 
 # TODO: implement the first test. Change the function name and input as needed
 def test_train_model():
@@ -18,9 +18,9 @@ def test_train_model():
        [5, 6],
     ])
     y_train = np.array([0, 0, 1, 1, 1])
-    
+
     model = train_model(X_train, y_train)
-    
+
     assert isinstance(model, RandomForestClassifier)
 
 
@@ -31,9 +31,9 @@ def test_compute_model_metrics():
     """
     y = np.array([0, 1, 1, 0])
     preds = np.array([0, 1, 1, 0])
-    
+
     precision, recall, fbeta = compute_model_metrics(y, preds)
-    
+
     assert precision == 1.0
     assert recall == 1.0
     assert fbeta == 1.0
@@ -46,4 +46,3 @@ def test_apply_label():
     """
     assert apply_label([1]) == ">50K"
     assert apply_label([0]) == "<=50K"
-    
